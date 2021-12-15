@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: MontS;
 }
 
 
@@ -21,6 +22,7 @@
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
+  top: 1.2rem;
   cursor: pointer;
 }
 .navigation__background {
@@ -29,6 +31,7 @@
   border-radius: 50%;
   position: fixed;
   right: 2.4rem;
+  top: 1.2rem;
   background-image: radial-gradient(#03A9F4, #03A9F4);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -133,5 +136,37 @@ video {
   height: auto;
   z-index: -100;
   background-size: cover;
-  }
+}
+
+.logo{
+  border: transparent !important;
+}
   
+.navbar-li{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 90%;
+    color: #fff !important;
+    padding-left: 15px !important;
+    padding-right: 25px !important;
+}
+
+.apply-now-li{
+    background-color: #fff;
+    border-radius: 16px;
+    width: 120px;
+    color: #5CCD9C !important;
+    text-align: center;
+    margin-top: -1px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 90%;
+}
+
+.pr-3{
+  padding-right: 3rem !important;
+}
+
+.pl-3{
+  padding-left: 3rem !important;
+}
