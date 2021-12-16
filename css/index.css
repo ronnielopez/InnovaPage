@@ -32,7 +32,7 @@
   position: fixed;
   right: 2.4rem;
   top: 1.2rem;
-  background-image: radial-gradient(#03A9F4, #03A9F4);
+  background-image: radial-gradient(#5CCD99, #5CCD99);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
@@ -265,4 +265,8 @@ padding-left: 15px;
 .sectionWhiteApply{
   height: 55rem;
   background-color: #fff;
+}
+
+.greenNav{
+  background-color: #57CC99 !important;
 }
