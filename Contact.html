@@ -66,8 +66,8 @@
     </nav>
     <header class="d-flex p-center sectionVideo">
         <video id="bgvid" autoplay muted loop>
-              <source type="video/mp4" src="./source/video/video1.mp4">
-              <img src="./source/img/AboutUsInicio.png" title="Imagen si no hay internet" />
+            <source type="video/mp4" src="./source/video/video1.mp4">
+            <img src="./source/img/AboutUsInicio.png" title="Imagen si no hay internet" />
         </video>
         <h1 class="title">WE WANT TO HERE YOU</h1>
     </header>
@@ -75,36 +75,45 @@
     <section class="sectionWhite">
         <div class="container my-20">
             <div class="row">
-                <div class="col">
-                    <div class="row justify-content-center">
-                        <div class="col-6">
+
+                <div class="col justify-content-center">
+
+                    <div class="row">
+
+                        <div class="col-12">
                             <img src="./source/img/Contact Us 1.png" alt="" class="titleAbout">
                         </div>
-                        <div class="col-6">
+
+                        <div class="col-12">
                             <span class="spanAbout">
-                            Phone Number: 2334-3454<br>
-                            Email: info@innovacenter.com<br>
-                            Address: 1 Calle Pte No 2706 y 51 Av Nte, San Salvador, San salvador
+                                <span class="fw-bold">Phone Number: </span>2334-3454<br>
+                                <span class="fw-bold">Email: </span> info@innovacenter.com<br>
+                                <span class="fw-bold">Address: </span> 1 Calle Pte No 2706 y 51 Av Nte, San Salvador,
+                                San salvador
                             </span>
                         </div>
-                    </div> 
+
+                    </div>
+
                 </div>
-                <div class="col py-5 webkitCenter">    
+
+                <div class="col py-5 webkitCenter">
                     <div id='map'></div>
                 </div>
+
             </div>
         </div>
     </section>
-    
-<script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoib3JpZ29lbHNhbHZhZG9yIiwiYSI6ImNrb2V4a3BwaDBhNGozMW1peWJiZjBrYzkifQ.XMfxRbvnmbWce6ASIJdsVA';
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
-    });
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoib3JpZ29lbHNhbHZhZG9yIiwiYSI6ImNrb2V4a3BwaDBhNGozMW1peWJiZjBrYzkifQ.XMfxRbvnmbWce6ASIJdsVA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [-74.5, 40], // starting position [lng, lat]
+            zoom: 9 // starting zoom
+        });
     </script>
     <script src="./js/index.js"></script>
 </body>

@@ -80,7 +80,7 @@
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(140);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -173,7 +173,7 @@ video {
 }
 
 .title{
-margin-top: 18rem;
+align-self: center;
 font-style: normal;
 font-weight: 900;
 font-size: 80px;
@@ -188,12 +188,12 @@ width: 700px;
 }
 
 .sectionWhite{
-  height: 45rem;
+  height: 50vh;
   background-color: #fff;
 }
 
 .sectionVideo{
-  height: 45rem;
+  height: 100vh;
 }
 
 .titleAbout{
@@ -208,7 +208,6 @@ font-weight: 500;
 font-size: 30px;
 line-height: 37px;
 color: #000000;
-width: 200px;
 }
 
 .sectionBannerImg{
@@ -287,23 +286,24 @@ nav{
   .title{
     font-size: 60px !important;
   }
-  .titleAbout{
-    width: 400px !important;
+  .sectionWhiteAb{
+    background-color: #fff;
+    height: 30vh !important;
   }
   .sectionWhite{
-    height: auto !important;
+    height: 60vh !important;
   }
   #map{
-    width: 500px !important;
-    height: 300px !important;
+    width: 800px !important;
+    height: 500px !important;
   }
-  .spanAbout{
-    font-size: 22px !important;
+  .sectionWhiteApply{
+    height: auto !important;
   }
 }
   @media (min-width: 48em) {
     .title{
-      font-size: 60px !important;
+      font-size: 130px !important;
     }
   }
   @media (min-width: 62em) {
@@ -314,7 +314,11 @@ nav{
       width: 640px !important;
     }
     .sectionWhite{
-      height: 45rem !important;
+      height: auto !important;
+    }
+    .sectionWhiteAb{
+      background-color: #fff;
+      height: 100vh !important;
     }
     #map{
       width: 600px !important;
