@@ -283,6 +283,9 @@ nav{
 /* responsive part */
 
 @media (min-width: 40.625em) {
+  .vh37{
+    height: 37vh !important;
+  }
   .title{
     font-size: 60px !important;
   }
@@ -324,4 +327,40 @@ nav{
       width: 600px !important;
       height: 300px !important;
     }
+    .vh37{
+      height: auto !important;
+    }
+  }
+
+  /* end responsive part */
+
+
+  .animated {
+    animation: dash 5s ;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1570;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  
+  
+  }
+
+  .applyImgcircle{
+    position: absolute;
+    margin-top: -73px;
+    width: 674px;
+    margin-left: -121px;
+    transform: rotate(-9deg);
+  }
+
+  .svgApply{
+    margin-left: -225px;
   }
