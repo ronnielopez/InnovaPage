@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../source/fonts/Montserrat-Medium.ttf') format('medium'),
+        url('../source/fonts/Montserrat-Bold.ttf') format('bold'),
+        url('../source/fonts/Montserrat-Black.ttf') format('black');
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 *,
 *::after,
@@ -5,7 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: MontS;
 }
 
 
@@ -198,7 +205,6 @@ width: 700px;
 
 .titleAbout{
   width: 650px;
-  padding-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -363,4 +369,8 @@ nav{
 
   .svgApply{
     margin-left: -225px;
+  }
+
+  .svgAbout{
+    position: relative;
   }
