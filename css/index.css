@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Montserrat';
+  src:  url('../source/fonts/Montserrat-Medium.ttf') format('medium'),
+        url('../source/fonts/Montserrat-Bold.ttf') format('bold'),
+        url('../source/fonts/Montserrat-Black.ttf') format('black');
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 *,
 *::after,
@@ -5,7 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: MontS;
 }
 
 .navigation__checkbox {
@@ -13,8 +20,8 @@
 }
 .navigation__button {
   background-color: #fff;
-  height: 5rem;
-  width: 5rem;
+  height: 3.5rem;
+  width: 3.5rem;
   position: fixed;
   right: 2rem;
   border-radius: 50%;
@@ -25,8 +32,8 @@
   cursor: pointer;
 }
 .navigation__background {
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
   position: fixed;
   right: 2.4rem;
@@ -79,7 +86,7 @@
   transform: translateX(1rem);
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(80);
+  transform: scale(140);
 }
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
@@ -87,10 +94,10 @@
 }
 .navigation__icon {
   position: relative;
-  margin-top: 2.5rem;
+  margin-top: 1.8rem;
 }
 .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-  width: 3rem;
+  width: 25px;
   height: 2px;
   background-color: #B0BEC5;
   display: inline-block;
@@ -139,6 +146,7 @@ video {
 
 .logo{
   border: transparent !important;
+  margin-top: -18px;
 }
   
 .navbar-li{
@@ -171,7 +179,7 @@ video {
 }
 
 .title{
-margin-top: 18rem;
+align-self: center;
 font-style: normal;
 font-weight: 900;
 font-size: 80px;
@@ -186,17 +194,21 @@ width: 700px;
 }
 
 .sectionWhite{
+<<<<<<< HEAD
   height: 45rem;
   background-color: #F9FAFD;
+=======
+  height: 50vh;
+  background-color: #fff;
+>>>>>>> 462caac85362f2863c59c76ae938da0dda340e52
 }
 
 .sectionVideo{
-  height: 45rem;
+  height: 100vh;
 }
 
 .titleAbout{
   width: 650px;
-  padding-top: 80px;
   padding-bottom: 30px;
 }
 
@@ -206,7 +218,6 @@ font-weight: 500;
 font-size: 30px;
 line-height: 37px;
 color: #000000;
-width: 200px;
 }
 
 .sectionBannerImg{
@@ -270,82 +281,100 @@ padding-left: 15px;
   background-color: #57CC99 !important;
 }
 
-/* 
-
-INDEX/HOME CSS
-
-*/
-
-.start-Section .backImg {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  height: 110%;
-  width: 100%;
-  object-fit: cover;
-  object-position: right;
-  z-index: -100;
+nav{
+  height: 70px;
 }
 
-.start-Section h1{
-  position:fixed;
-  font-size: 3rem;
-  margin-top: 10%;
+#map{
+  width: 600px;
+  height: 300px;
 }
 
-.start-Section .rocket {
-  position: relative;
-  margin-top: 20%;
-  max-width:100%
-}
-@media (max-width: 680px) and (min-width: 501px) {
-  .start-Section  .rocket {
-    position: absolute;
-    position: absolute;
-    bottom: -145px;
+/* responsive part */
+
+@media (min-width: 40.625em) {
+  .vh37{
+    height: 37vh !important;
+  }
+  .title{
+    font-size: 60px !important;
+  }
+  .sectionWhiteAb{
+    background-color: #fff;
+    height: 30vh !important;
+  }
+  .sectionWhite{
+    height: 60vh !important;
+  }
+  #map{
+    width: 800px !important;
+    height: 500px !important;
+  }
+  .sectionWhiteApply{
+    height: auto !important;
   }
 }
-@media (max-width: 550px) {
-  .start-Section  .rocket {
-    position: absolute;
-    bottom: -10px;
+  @media (min-width: 48em) {
+    .title{
+      font-size: 130px !important;
+    }
   }
-}
-.start-Section .rocket img {
-  width: 100%;
-}
+  @media (min-width: 62em) {
+    .title{
+      font-size: 80px !important;
+    }
+    .titleAbout{
+      width: 640px !important;
+    }
+    .sectionWhite{
+      height: auto !important;
+    }
+    .sectionWhiteAb{
+      background-color: #fff;
+      height: 100vh !important;
+    }
+    #map{
+      width: 600px !important;
+      height: 300px !important;
+    }
+    .vh37{
+      height: auto !important;
+    }
+  }
+
+  /* end responsive part */
 
 
-.section-2 {
-  position: absolute;
-  width: 100%;
-  bottom: -185px;
-  background-color: #fff;
-}
-.section-2 h2 {
-  padding-bottom: 20px;
-  text-align: center;
-}
+  .animated {
+    animation: dash 5s ;
+  }
+  
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1570;
+    }
+    50% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  
+  
+  }
 
-.custom-shape-divider-bottom-1639671530 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
+  .applyImgcircle{
+    position: absolute;
+    margin-top: -73px;
+    width: 674px;
+    margin-left: -121px;
+    transform: rotate(-9deg);
+  }
 
-.custom-shape-divider-bottom-1639671530 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 91px;
-  transform: rotateY(180deg);
-}
+  .svgApply{
+    margin-left: -225px;
+  }
 
-.custom-shape-divider-bottom-1639671530 .shape-fill {
-  fill: #FFFFFF;
-}
-
-
+  .svgAbout{
+    position: relative;
+  }
