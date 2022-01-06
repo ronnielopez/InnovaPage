@@ -1,10 +1,29 @@
 @font-face {
-  font-family: 'Montserrat';
-  src:  url('../source/fonts/Montserrat-Medium.ttf') format('medium'),
-        url('../source/fonts/Montserrat-Bold.ttf') format('bold'),
-        url('../source/fonts/Montserrat-Black.ttf') format('black');
+  font-family: 'Montserrat-Bold';
+  src: url('../source/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../source/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../source/fonts/Montserrat-Black.woff2') format('woff2'),
+      url('../source/fonts/Montserrat-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../source/fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../source/fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 *,
@@ -14,6 +33,7 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 
 .navigation__checkbox {
   display: none;
@@ -194,13 +214,8 @@ width: 700px;
 }
 
 .sectionWhite{
-<<<<<<< HEAD
-  height: 45rem;
-  background-color: #F9FAFD;
-=======
   height: 50vh;
   background-color: #fff;
->>>>>>> 462caac85362f2863c59c76ae938da0dda340e52
 }
 
 .sectionVideo{
@@ -378,3 +393,162 @@ nav{
   .svgAbout{
     position: relative;
   }
+/* 
+
+INDEX/HOME CSS
+
+*/
+
+.start-Section .backImg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 110%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  z-index: -100;
+}
+
+.start-Section h1{
+  position:fixed;
+  font-size: 3rem;
+  margin-top: 10%;
+}
+
+.start-Section .rocket {
+  position: relative;
+  margin-top: 20%;
+  max-width:100%
+}
+@media (max-width: 680px) and (min-width: 501px) {
+  .start-Section  .rocket {
+    position: absolute;
+    position: absolute;
+    bottom: -145px;
+  }
+}
+@media (max-width: 550px) {
+  .start-Section  .rocket {
+    position: absolute;
+    bottom: -10px;
+  }
+}
+.start-Section .rocket img {
+  width: 100%;
+}
+
+.Benefits img{
+  max-width: 65%;  
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.Benefits h2{
+  margin-top: 0.5rem;
+  text-align: center;
+  font size: 36px;
+}
+
+.y-Top{
+  padding-top: 10rem;
+}
+
+.y-Bot{
+  padding-bottom: 5rem;
+}
+
+.PremiumSDiv{
+  position: relative;
+}
+
+.PremiumSDiv Img{
+  max-width:110%;
+  margin-left:-115px;
+}
+
+.PremiumSImg{
+  position:absolute;
+}
+
+.HomeWhite h1{
+  color: #57CC98;
+  font-size: 80px;
+  max-width:100%;
+  font-family: Montserrat-Black;
+}
+
+.HomeWhite p{
+  max-width:100%;
+  font-family: Montserrat-Medium;
+}
+
+.sectionAqua{
+  height: 50vh;
+  background-color: #57CC98;
+}
+
+/* responsive part */
+
+@media (min-width: 40.625em) {
+  
+  .sectionAqua{
+    height: 60vh !important;
+  }
+  
+}
+  @media (min-width: 62em) {
+    
+    .sectionAqua{
+      height: auto !important;
+    }
+   
+  }
+
+  /* end responsive part */
+
+.HomeAqua h1{
+  color: #ffff;
+  font-size: 80px;
+  max-width:100%;
+  font-family: Montserrat-Black;
+}
+
+.HomeAqua p{
+  color: #ffff;
+  max-width:100%;
+  font-family: Montserrat-Medium;
+}
+
+.MoneyDiv{
+  position: relative;
+}
+
+.MoneyDiv Img{
+  max-width:110%;
+  margin-left: 66px;
+}
+
+.lastLogo Img{
+  max-width:100%;
+  margin-left:-115px;
+}
+
+.lastSection Img{
+  max-width:100%;
+}
+
+.apply-now-button{
+  background-color: #5CCD9C;
+  border-radius: 10px;
+  width: 170px;
+  color: #fff !important;
+  text-align: center;
+  margin-top: -1px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 90%;
+  padding: 15px;
+}
