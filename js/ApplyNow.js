@@ -43,3 +43,6 @@ $("#applybtn").click(function () {
 	
 
 });
+
+
+AOS.init();

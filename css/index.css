@@ -230,7 +230,7 @@ width: 700px;
 .spanAbout{
   font-style: normal;
 font-weight: 500;
-font-size: 30px;
+font-size: 22px;
 line-height: 37px;
 color: #000000;
 }
@@ -305,6 +305,11 @@ nav{
   height: 300px;
 }
 
+.contactCircleBelow{
+  margin-left: -180px !important;
+  position: absolute;
+}
+
 /* responsive part */
 
 @media (min-width: 40.625em) {
@@ -316,7 +321,21 @@ nav{
   }
   .sectionWhiteAb{
     background-color: #fff;
-    height: 30vh !important;
+    height: 50vh !important;
+  }
+  .py-min-2{
+    margin-top: 4rem;
+  }
+  .greenNav{
+    height: 95px;
+  }
+  .sectionWhiteContact{
+    background-color: #fff;
+    height: 75vh !important;
+  }
+  .aboutCircleBelow{
+    margin-left: -21px !important;
+    position: absolute;
   }
   .sectionWhite{
     height: 60vh !important;
@@ -341,12 +360,23 @@ nav{
     .titleAbout{
       width: 640px !important;
     }
+    .greenNav{
+      height: 75px;
+    }
     .sectionWhite{
       height: auto !important;
     }
     .sectionWhiteAb{
       background-color: #fff;
-      height: 100vh !important;
+      height: 120vh !important;
+    }
+    .aboutCircleBelow{
+      margin-left: -70px !important;
+      position: absolute;
+    }
+    .sectionWhiteContact{
+      background-color: #fff;
+      height: 120vh !important;
     }
     #map{
       width: 600px !important;
@@ -379,11 +409,7 @@ nav{
   }
 
   .applyImgcircle{
-    position: absolute;
-    margin-top: -73px;
-    width: 674px;
     margin-left: -121px;
-    transform: rotate(-9deg);
   }
 
   .svgApply{
@@ -392,6 +418,14 @@ nav{
 
   .svgAbout{
     position: relative;
+  }
+
+  .upCircle img{
+    max-width: 50% !important;
+    margin-left: 200px;
+  }
+  .text-right{
+    text-align: right;
   }
 /* 
 
@@ -449,7 +483,7 @@ INDEX/HOME CSS
 .Benefits h2{
   margin-top: 0.5rem;
   text-align: center;
-  font size: 36px;
+  font-size: 36px;
 }
 
 .y-Top{
@@ -527,8 +561,8 @@ INDEX/HOME CSS
 }
 
 .MoneyDiv Img{
-  max-width:110%;
-  margin-left: 66px;
+  max-width:100%;
+  margin-left: 80px;
 }
 
 .lastLogo Img{
@@ -542,7 +576,7 @@ INDEX/HOME CSS
 
 .apply-now-button{
   background-color: #5CCD9C;
-  border-radius: 10px;
+  border-radius: 16px;
   width: 170px;
   color: #fff !important;
   text-align: center;
@@ -551,4 +585,8 @@ INDEX/HOME CSS
   font-size: 20px;
   line-height: 90%;
   padding: 15px;
+}
+
+.align-center{
+  align-self: center;
 }
