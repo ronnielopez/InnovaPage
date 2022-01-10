@@ -612,4 +612,47 @@ INDEX/HOME CSS
   margin-left: 94px;
 }
 
+.Homeheader {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
 
+.Homeheader video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.Homeheader .container {
+  position: fixed;
+  z-index: 0;
+}
+
+
+
+@media (pointer: coarse) and (hover: none) {
+  .Homeheader {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  .Homeheader video {
+    display: none;
+  }
+}
+
+.HomeTitle{
+  font-size: calc(3.75em + 0.25vmin);
+  color: #ffff;
+}
