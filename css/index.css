@@ -308,7 +308,17 @@ nav{
     max-width: 100%;
     margin-left: 10px !important;
     display:block;
-  }  
+  } 
+  .contactInput{
+    border: 3px solid #57CC99;
+  } 
+  .contactSelect{
+    border: 3px solid #57CC99;
+  } 
+  .labelInput{
+    font-size: 20px;
+    padding-top: 13px;
+  }
   .vh37{
     height: 37vh !important;
   }
@@ -722,4 +732,17 @@ INDEX/HOME CSS
 .HomeTitle{
   font-size: calc(3.75em + 0.25vmin);
   color: #ffff;
+}
+
+
+/* pruebas */
+
+particle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1034;
 }
