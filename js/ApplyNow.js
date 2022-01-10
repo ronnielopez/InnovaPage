@@ -23,8 +23,9 @@ $("#applybtn").click(function () {
 	//Job Experience
 	let job = document.getElementById("jobExperience").value;
 
+
 	//Curriculum
-	if (firstname != null && lastname != null && level != null && job != null && mail != null && phone != null) {
+	if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "") {
         var settings = {
             "url": `https://gmailapitest.herokuapp.com/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
             "method": "GET",
@@ -32,7 +33,10 @@ $("#applybtn").click(function () {
           };
           
           $.ajax(settings).done(function (response) {
-            console.log(response);
+            Swal.fire({
+                icon: 'success',
+                title: 'Great, your email has been send'
+            })
           });
 		}else {
             Swal.fire({
