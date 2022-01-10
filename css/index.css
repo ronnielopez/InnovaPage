@@ -574,27 +574,10 @@ INDEX/HOME CSS
 }
 
 .sectionAqua{
-  height: 100vh;
+  height: 100%;
   background-color: #57CC98;
 }
-/* responsive part */
 
-@media (min-width: 40.625em) {
-  
-  .sectionAqua{
-    height: 60vh !important;
-  }
-  
-}
-  @media (min-width: 62em) {
-    
-    .sectionAqua{
-      height: auto !important;
-    }
-   
-  }
-
-  /* end responsive part */
 .HomeAqua h1{
   color: #ffff;
   font-size: calc(3.75em + 0.25vmin);
