@@ -304,6 +304,11 @@ nav{
     margin-left: -41px;
     width: 250px !important;
   }
+  .divDerecha Img{
+    max-width: 100%;
+    margin-left: 0px !important;
+    display:block;
+  }  
   .vh37{
     height: 37vh !important;
   }
@@ -407,6 +412,11 @@ nav{
     .title{
       font-size: 80px !important;
     }
+    .divDerecha Img{
+      max-width: 100%;
+      margin-left: 92px !important;
+      display:block;
+    }  
     .titleAbout{
       width: 640px !important;
     }
