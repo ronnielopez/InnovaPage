@@ -491,7 +491,7 @@ INDEX/HOME CSS
 
 .sectionWhiteHome{
   width:100%;
-  background-color: #fff;
+  background-color: #F9FAFD;
 }
 
 
@@ -547,9 +547,9 @@ INDEX/HOME CSS
 
 .Benefits h2{
   margin-top: 0.5rem;
-  text-align: center;
-  font-size: calc(1em + 1.25vmin);
+  font-size: calc(0.75em + 1vmin);
   font-family: Montserrat-Black;
+  word-wrap: break-word;
 }
 
 .y-Top{
@@ -565,6 +565,8 @@ INDEX/HOME CSS
   font-size: calc(3.75em + 0.25vmin);
   max-width:100%;
   font-family: Montserrat-Black;
+  word-wrap: break-word;
+  
 }
 
 .HomeWhite p{
@@ -576,13 +578,16 @@ INDEX/HOME CSS
 .sectionAqua{
   height: 100%;
   background-color: #57CC98;
+  position: relative;
 }
 
 .HomeAqua h1{
+  
   color: #ffff;
   font-size: calc(3.75em + 0.25vmin);
   max-width:100%;
   font-family: Montserrat-Black;
+  word-wrap: break-word;
 }
 
 .HomeAqua p{
@@ -657,9 +662,13 @@ INDEX/HOME CSS
 }
 
 .divDerecha Img{
-  max-width:100%;
-  margin-left: 94px;
+  max-width: 100%;
+  margin-right:0;
+  display:block;
 }
+
+
+
 
 .Homeheader {
   position: relative;
