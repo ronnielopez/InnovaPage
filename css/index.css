@@ -279,7 +279,7 @@ padding-left: 15px;
 }
 
 .sectionWhiteApply{
-  height: 55rem;
+  height: auto;
   background-color: #fff;
 }
 
@@ -298,6 +298,62 @@ nav{
 
 
 /* responsive part */
+/* small mobile :320px. */
+@media only screen and (max-width: 479px) {
+  .applyImgcircle{
+    margin-left: -41px;
+    width: 250px !important;
+  }
+  .vh37{
+    height: 37vh !important;
+  }
+  .title{
+    font-size: 60px !important;
+  }
+  .sectionWhiteAb{
+    background-color: #fff;
+    height: 50vh !important;
+  }
+  .sectionWhiteApply{
+    height: auto !important;
+    background-color: #fff;
+  }
+  .py-min-2{
+    margin-top: 4rem;
+  }
+  .greenNav{
+    height: 95px;
+  }
+  .sectionWhiteContact{
+    background-color: #fff;
+    height: 75vh !important;
+  }
+  .contactCircleBelow{
+    margin-left: -110px !important;
+    position: absolute;
+  }
+  .aboutCircleBelow{
+    margin-left: -21px !important;
+    position: absolute;
+  }
+  .sectionWhite{
+    height: 60vh !important;
+  }
+  #map{
+    width: 800px !important;
+    height: 500px !important;
+  }
+  .sectionWhiteApply{
+    height: auto !important;
+  }
+  .navigation__list{
+    left: 43% !important;
+  }
+  .navigation__link:link{
+    font-size: 2rem;
+    padding: auto !important;
+  }
+}
 
 @media (min-width: 40.625em) {
   .vh37{
@@ -309,6 +365,10 @@ nav{
   .sectionWhiteAb{
     background-color: #fff;
     height: 50vh !important;
+  }
+  .sectionWhiteApply{
+    height: auto !important;
+    background-color: #fff;
   }
   .py-min-2{
     margin-top: 4rem;
@@ -380,6 +440,10 @@ nav{
     .vh37{
       height: auto !important;
     }
+    .applyImgcircle{
+      margin-left: -121px;
+      width: 500px !important;
+    }
   }
 
   /* end responsive part */
@@ -403,9 +467,6 @@ nav{
   
   }
 
-  .applyImgcircle{
-    margin-left: -121px;
-  }
 
   .svgApply{
     margin-left: -225px;
