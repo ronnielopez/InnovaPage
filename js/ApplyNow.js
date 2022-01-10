@@ -26,7 +26,7 @@ $("#applybtn").click(function () {
 	//Curriculum
 	if (firstname != null && lastname != null && level != null && job != null && mail != null && phone != null) {
         var settings = {
-            "url": `http://localhost:4000/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
+            "url": `https://gmailapitest.herokuapp.com/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
             "method": "GET",
             "timeout": 0,
           };

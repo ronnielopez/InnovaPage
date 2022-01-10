@@ -296,10 +296,6 @@ nav{
   height: 300px;
 }
 
-.contactCircleBelow{
-  margin-left: -180px !important;
-  position: absolute;
-}
 
 /* responsive part */
 
@@ -323,6 +319,10 @@ nav{
   .sectionWhiteContact{
     background-color: #fff;
     height: 75vh !important;
+  }
+  .contactCircleBelow{
+    margin-left: -110px !important;
+    position: absolute;
   }
   .aboutCircleBelow{
     margin-left: -21px !important;
@@ -368,6 +368,10 @@ nav{
     .sectionWhiteContact{
       background-color: #fff;
       height: 120vh !important;
+    }
+    .contactCircleBelow{
+      margin-left: -160px !important;
+      position: absolute;
     }
     #map{
       width: 600px !important;
