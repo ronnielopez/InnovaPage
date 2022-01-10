@@ -312,7 +312,7 @@ nav{
   }
   .sectionWhiteAb{
     background-color: #fff;
-    height: 50vh !important;
+    height: auto !important;
   }
   .sectionWhiteApply{
     height: auto !important;
@@ -326,21 +326,20 @@ nav{
   }
   .sectionWhiteContact{
     background-color: #fff;
-    height: 75vh !important;
+    height: auto !important;
   }
   .contactCircleBelow{
-    margin-left: -110px !important;
-    position: absolute;
+    margin-left: 203px !important;
+    width: 140px;
   }
   .aboutCircleBelow{
     margin-left: -21px !important;
-    position: absolute;
   }
   .sectionWhite{
-    height: 60vh !important;
+    height: auto !important;
   }
   #map{
-    width: 800px !important;
+    width: 300px !important;
     height: 500px !important;
   }
   .sectionWhiteApply{
