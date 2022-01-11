@@ -21,19 +21,19 @@
                 <a class="pl-3" href="#"><img src="./source/img/Logo White 1.png" class="float-start img-fluid" /></a>
                 <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-                <label for="navi-toggle" class="navigation__button">
-                    <span class="navigation__icon">&nbsp;</span>
+                <label for="navi-toggle" class="navigation__button" id="menu">
+                    <span class="navigation__icon" >&nbsp;</span>
                 </label>
 
                 <div class="navigation__background">&nbsp;</div>
 
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="index.html" class="navigation__link"><span></span>HOME</a>
+                        <li class="navigation__item"><a href="index.html" class="navigation__link d-none" id="home"><span></span>HOME</a>
                         </li>
-                        <li class="navigation__item"><a href="About.html" class="navigation__link"><span></span>ABOUT US</a></li>
-                        <li class="navigation__item"><a href="Contact.html" class="navigation__link"><span></span>CONTACT US</a></li>
-                        <li class="navigation__item"><a href="ApplyNow.html" class="navigation__link"><span></span>APPLY NOW</a>
+                        <li class="navigation__item"><a href="About.html" class="navigation__link d-none" id="about"><span></span>ABOUT US</a></li>
+                        <li class="navigation__item"><a href="Contact.html" class="navigation__link d-none" id="contact"><span></span>CONTACT US</a></li>
+                        <li class="navigation__item"><a href="ApplyNow.html" class="navigation__link d-none" id="applyM"><span></span>APPLY NOW</a>
                         </li>
                     </ul>
                 </nav>
@@ -158,6 +158,15 @@
                             <option value="1 to 2 years call center experience">1 to 2 years call center experience</option>
                             <option value="2 to 3+ years call center experience">2 to 3+ years call center experience</option>
                         </select>
+                        </div>
+                    </div>
+
+                    <div class="row py-4">
+                        <div class="col-sm-12">
+                            <label for="level" class="labelInput">Your CV</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <input class="form-control" type="file" id="ifile">
                         </div>
                     </div>
 

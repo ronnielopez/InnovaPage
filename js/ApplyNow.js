@@ -2,10 +2,37 @@ window.addEventListener("scroll", ()=>{
     let header = document.querySelector("nav");
     header.classList.toggle("greenNav" , window.scrollY > 0)
 })
+let active = false
+$("#menu").click(()=>{
+  active = !active
+  let home = document.getElementById("home");
+  let about = document.getElementById("about");
+  let contact = document.getElementById("contact");
+  let applyM = document.getElementById("applyM");
+  if(active){
+    home.classList.replace("d-none", "d-block")
+    about.classList.replace("d-none", "d-block")
+    contact.classList.replace("d-none", "d-block")
+    applyM.classList.replace("d-none", "d-block")
+  }else{
+    home.classList.replace("d-block", "d-none")
+    about.classList.replace("d-block", "d-none")
+    contact.classList.replace("d-block", "d-none")
+    applyM.classList.replace("d-block", "d-none")
+  }
+  
+  
+})
 
 /*------------------
 	Formulario
 --------------------*/
+
+$('#ifile').change( function(event) {
+  let tmppath = window.URL.createObjectURL(event.target.files[0]);
+  let absolutePath=$("ifile").attr("src");
+});
+
 $("#applybtn").click(function () {
 	//nombres
 	let firstname = document.getElementById("firstName").value;
@@ -22,6 +49,10 @@ $("#applybtn").click(function () {
 
 	//Job Experience
 	let job = document.getElementById("jobExperience").value;
+
+  //Job Experience
+	// let file = document.getElementById("ifile").value;
+
 
 
 	//Curriculum
