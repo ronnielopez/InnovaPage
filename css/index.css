@@ -219,11 +219,10 @@ width: 700px;
 }
 
 .spanAbout{
-  font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 37px;
-color: #000000;
+  font-size: calc(1em + 1vmin);
+  max-width:100%;
+  font-family: Montserrat-Medium;
+  font-weight: 500;
 }
 
 .sectionBannerImg{
@@ -231,10 +230,10 @@ color: #000000;
 }
 
 .spanMV{
-  font-style: normal;
-font-weight: 500;
-font-size: 30px;
-line-height: 37px;
+  font-size: calc(1em + 1vmin);
+  max-width:100%;
+  font-family: Montserrat-Medium;
+  font-weight: 500;
 }
 
 .my-20{
@@ -610,10 +609,89 @@ INDEX/HOME CSS
 }
 
 .HomeAqua p{
-  font-size: calc(0.75em + 1vmin);
+  font-size: calc(0.5em + 1vmin);
   color: #ffff;
   max-width:100%;
   font-family: Montserrat-Medium;
+}
+
+@media (max-width: 680px) and (min-width: 501px) {
+  .HomeWhite h1{
+    color: #57CC98;
+    font-size: calc(3.5em + 0.25vmin);
+    max-width:100%;
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+    
+  }
+  
+  .HomeWhite p, span{
+    font-size: calc(0.5em + 1vmin);
+    max-width:100%;
+    font-family: Montserrat-Medium;
+  }
+  .HomeAqua h1{
+  
+    color: #ffff;
+    font-size: calc(3.5em + 0.25vmin);
+    max-width:100%;
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+  }
+  
+  .HomeAqua p{
+    font-size: calc(0.5em + 1vmin);
+    color: #ffff;
+    max-width:100%;
+    font-family: Montserrat-Medium;
+  }
+
+  .Benefits h2{
+    margin-top: 0.5rem;
+    font-size: calc(0.5em + 1vmin);
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 550px) {
+
+  .HomeWhite h1{
+    color: #57CC98;
+    font-size: calc(2em + 0.25vmin);
+    max-width:100%;
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+    
+  }
+  
+  .HomeWhite p{
+    font-size: calc(0.5em + 1vmin);
+    max-width:100%;
+    font-family: Montserrat-Medium;
+  }
+  .HomeAqua h1{
+  
+    color: #ffff;
+    font-size: calc(2em + 0.25vmin);
+    max-width:100%;
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+  }
+  
+  .HomeAqua p{
+    font-size: calc(0.5em + 1vmin);
+    color: #ffff;
+    max-width:100%;
+    font-family: Montserrat-Medium;
+  }
+
+  .Benefits h2{
+    margin-top: 0.5rem;
+    font-size: calc(0.45em + 1vmin);
+    font-family: Montserrat-Black;
+    word-wrap: break-word;
+  }
+  
 }
 
 .lastLogo Img{
@@ -746,3 +824,32 @@ particle {
   opacity: 0;
   z-index: 1034;
 }
+
+.container h1, h2, h3, p, .titleImage{
+  padding: 0px 30px 0px 30px;
+}
+
+.titleHome{
+  position:fixed;
+  align-self: center;
+  margin-top: -3em;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 90%;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  font-family: Montserrat-Black;
+  padding: 0px 30px 0px 30px;
+  }
+
+.alignRight{
+  float: right;
+  margin-right: 25%;
+}
+
+.alignLeft{
+float: left;
+margin-left: 5%;
+}
+  
