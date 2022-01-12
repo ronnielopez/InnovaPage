@@ -834,7 +834,7 @@ particle {
   align-self: center;
   margin-top: -3em;
   font-weight: 900;
-  font-size: 80px;
+  font-size: calc(4.75em + 1vmin);
   line-height: 90%;
   text-align: center;
   color: #fff;
