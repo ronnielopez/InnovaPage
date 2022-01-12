@@ -741,6 +741,7 @@ INDEX/HOME CSS
 .rocket {
   position: absolute;
   bottom:0;
+  
   max-width:100%
 }
 
@@ -834,7 +835,7 @@ particle {
   align-self: center;
   margin-top: -3em;
   font-weight: 900;
-  font-size: calc(4.75em + 1vmin);
+  font-size: calc(6em + 1=3vmin) ;
   line-height: 90%;
   text-align: center;
   color: #fff;
@@ -844,13 +845,6 @@ particle {
   z-index:-1;
   }
 
-.alignRight{
-  float: right;
-  margin-right: 10%;
+.space{
+  width:200px
 }
-
-.alignLeft{
-float: left;
-margin-left: 5%;
-}
-  
