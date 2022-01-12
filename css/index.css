@@ -305,7 +305,7 @@ nav{
   }
   .sectionGreenDif{
     background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
-    height: auto;
+    height: auto !important;
   }
   .titleAB{
     font-size: 60px !important;
@@ -494,10 +494,18 @@ nav{
       bottom:0;
       max-width:200%
     }
+    .sectionGreenDif{
+      background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
+      height: auto !important;
+    }
   }
 
   /* end responsive part */
 
+  .sectionGreenDif{
+    background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
+    height: auto !important;
+  }
 
   .animated {
     animation: dash 5s ;
