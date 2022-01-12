@@ -69,7 +69,7 @@ $("#applybtn").click(function () {
 	//Curriculum
 	if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "") {
         var settings = {
-            "url": `https://gmailapitest.herokuapp.com/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
+            "url": `https://insidious-yummy-quail.glitch.me/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
             "method": "GET",
             "timeout": 0,
           };
