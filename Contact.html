@@ -119,9 +119,12 @@
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/streets-v11', // style URL
-            center: [-89.2462522, 13.6893086], // starting position [lng, lat]
-            zoom: 12 // starting zoom
+            center: [-89.2172146,13.7027259], // starting position [lng, lat]
+            zoom: 17 // starting zoom
         });
+        const marker1 = new mapboxgl.Marker({ color: '#5CCD99'})
+        .setLngLat([-89.2169,13.7027259])
+        .addTo(map);
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
