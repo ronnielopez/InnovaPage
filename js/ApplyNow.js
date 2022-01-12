@@ -30,7 +30,18 @@ $("#menu").click(()=>{
 
 $('#ifile').change( function(event) {
   let tmppath = window.URL.createObjectURL(event.target.files[0]);
-  let absolutePath=$("ifile").attr("src");
+  let file = event.target.files[0];
+  var reader  = new FileReader();
+
+  reader.onloadend = function () {
+    preview.src = reader.result;
+  }
+
+  if (file) {
+    console.log(reader.readAsDataURL(file))
+  } else {
+    preview.src = "";
+  }
 });
 
 $("#applybtn").click(function () {

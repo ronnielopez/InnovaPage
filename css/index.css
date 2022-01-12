@@ -303,6 +303,24 @@ nav{
     margin-left: -41px;
     width: 250px !important;
   }
+  .sectionGreenDif{
+    background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
+    height: auto;
+  }
+  .titleAB{
+    font-size: 60px !important;
+    color: #fff;
+    font-family: Montserrat-Black;
+    font-weight: 900;
+  }
+  .titleABmini{
+    font-size: 20px !important;
+    color: #fff;
+    font-family: Montserrat-Black;
+  }
+  .spanAbout{
+    padding-top: 20px;
+  }
   .divDerecha Img{
     max-width: 100%;
     margin-left: 10px !important;
