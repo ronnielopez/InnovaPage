@@ -436,7 +436,6 @@ nav{
   .rocket {
     position: absolute;
     bottom:0;
-    max-width:200%
   }
 }
   @media (min-width: 48em) {
@@ -843,3 +842,6 @@ particle {
   position: relative;
 }
 
+.sectionHomeVideo{
+  height: 100vh;
+}
