@@ -57,7 +57,7 @@ $("#applybtn").click(function () {
 	//Curriculum
 	if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "") {
           var settings = {
-            "url": "http://localhost:4000/api/sendEmail/?firstname=Ronnie&lastname=Lopez&level=1&phone=7084-8798&mail=ronnielopez503@gmail.com&job=2%20to%203+%20years%20call%20center%20experience",
+            "url": "https://insidious-yummy-quail.glitch.me/api/sendEmail/?firstname=Ronnie&lastname=Lopez&level=1&phone=7084-8798&mail=ronnielopez503@gmail.com&job=2%20to%203+%20years%20call%20center%20experience",
             "method": "POST",
             "timeout": 0,
             "headers": {
