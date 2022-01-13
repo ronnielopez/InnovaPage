@@ -851,3 +851,59 @@ particle {
   position: relative;
 }
 
+/*------------------
+	Preloder
+--------------------*/
+#preloder {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background: #22577A;
+	display: table;
+}
+
+.loader {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.loader img {
+	animation: loader 0.8s linear infinite;
+	-webkit-animation: loader 0.8s linear infinite;
+	width: 250px;
+}
+
+.loader h2 {
+	font-size: 20px;
+	margin-top: 10px;
+  color: #fff;
+  font-family: Montserrat-Black;
+}
+
+@keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 1;
+	}
+}
