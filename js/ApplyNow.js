@@ -28,21 +28,7 @@ $("#menu").click(()=>{
 	Formulario
 --------------------*/
 
-$('#ifile').change( function(event) {
-  let tmppath = window.URL.createObjectURL(event.target.files[0]);
-  let file = event.target.files[0];
-  var reader  = new FileReader();
 
-  reader.onloadend = function () {
-    preview.src = reader.result;
-  }
-
-  if (file) {
-    console.log(reader.readAsDataURL(file))
-  } else {
-    preview.src = "";
-  }
-});
 
 $("#applybtn").click(function () {
 	//nombres
@@ -62,18 +48,25 @@ $("#applybtn").click(function () {
 	let job = document.getElementById("jobExperience").value;
 
   //Job Experience
-	// let file = document.getElementById("ifile").value;
-
-
+  let file = document.getElementById("ifile").files[0];
+  var reader = new FileReader();
+  reader.readAsBinaryString(file);
+  reader.onload = function () {
+    var dataUri = btoa(reader.result);
 
 	//Curriculum
 	if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "") {
-        var settings = {
-            "url": `https://insidious-yummy-quail.glitch.me/api/sendEmail/?firstname=${firstname}&lastname=${lastname}&level=${level}&phone=${phone}&mail=${mail}&job=${job}`,
-            "method": "GET",
+          var settings = {
+            "url": "http://localhost:4000/api/sendEmail/?firstname=Ronnie&lastname=Lopez&level=1&phone=7084-8798&mail=ronnielopez503@gmail.com&job=2%20to%203+%20years%20call%20center%20experience",
+            "method": "POST",
             "timeout": 0,
+            "headers": {
+              "Content-Type": "application/json"
+            },
+            "data": JSON.stringify({
+              "cv": `${dataUri}`
+            }),
           };
-          
           $.ajax(settings).done(function (response) {
             Swal.fire({
                 icon: 'success',
@@ -86,7 +79,8 @@ $("#applybtn").click(function () {
                 title: 'Complete all the fields'
             })
         }
-	
+
+  }
 
 });
 
