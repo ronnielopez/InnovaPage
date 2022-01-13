@@ -49,20 +49,20 @@ $("#applybtn").click(function () {
 	let phone = document.getElementById("phone").value;
 
 	//English Level
-	let level = document.getElementById("englishLevel").value;
+	let level = $("#englishLevel").val();
 
 	//Job Experience
-	let job = document.getElementById("jobExperience").value;
+	let job = $("#jobExperience").val();
 
   //Job Experience
   let file = document.getElementById("ifile").files[0];
+
+if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "" && file != null) {
   var reader = new FileReader();
   reader.readAsBinaryString(file);
   reader.onload = function () {
     var dataUri = btoa(reader.result);
 
-	//Curriculum
-	if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "") {
           var settings = {
             "url": "https://insidious-yummy-quail.glitch.me/api/sendEmail/?firstname=Ronnie&lastname=Lopez&level=1&phone=7084-8798&mail=ronnielopez503@gmail.com&job=2%20to%203+%20years%20call%20center%20experience",
             "method": "POST",
@@ -80,14 +80,15 @@ $("#applybtn").click(function () {
                 title: 'Great, your email has been send'
             })
           });
-		}else {
-            Swal.fire({
-                icon: 'error',
-                title: 'Complete all the fields'
-            })
-        }
 
-  }
+		}
+
+  }else {
+    Swal.fire({
+        icon: 'error',
+        title: 'Complete all the fields'
+    })
+}
 
 });
 
