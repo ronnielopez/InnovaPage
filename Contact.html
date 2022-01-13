@@ -15,6 +15,13 @@
 </head>
 
 <body>
+     <!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader">
+			<img src="./source/img/Logo White 1.png">
+			<h2>Cargando.....</h2>
+		</div>
+	</div>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
             <!-- partial:index.partial.html -->
@@ -47,17 +54,18 @@
                 <div class="d-flex">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item align-center">
-                            <a class="nav-link navbar-li" href="index.html">Home</a>
+                            <a class="nav-link navbar-li" href="index.html">HOME</a>
                         </li>
                         <li class="nav-item align-center">
-                            <a class="nav-link navbar-li" href="About.html">About us</a>
+                            <a class="nav-link navbar-li" href="About.html">ABOUT US</a>
                         </li>
                         <li class="nav-item align-center">
-                            <a class="nav-link navbar-li" href="Contact.html">Contact us</a>
-                        </li>
+                            <a class="nav-link navbar-li" href="Contact.html">CONTACT US</a>
                         <li class="nav-item align-center">
                             <a id="button" class="nav-link apply-now-li" href="ApplyNow.html">Apply now</a>
+                            
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -106,9 +114,9 @@
                 </div>
 
             </div>
-            <div class="col text-right">
-                <img src="./source/img/CirculoAbajoAbout.png" alt="" class="aboutCircleBelow" width="150">
-            </div>
+        </div>
+        <div class="text-right">
+            <img src="./source/img/CirculoAbajoAbout.png" alt="" width="150">
         </div>
         
     </section>
@@ -119,9 +127,12 @@
         const map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/mapbox/streets-v11', // style URL
-            center: [-89.2462522, 13.6893086], // starting position [lng, lat]
-            zoom: 12 // starting zoom
+            center: [-89.2169,13.7027259], // starting position [lng, lat]
+            zoom: 17 // starting zoom
         });
+        const marker1 = new mapboxgl.Marker({ color: '#5CCD99'})
+        .setLngLat([-89.2169,13.7027259])
+        .addTo(map);
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
