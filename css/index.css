@@ -970,5 +970,10 @@ ul.social > li > a {
 
 ul.social > li > a:hover {
   text-decoration: none;
-  background-color: #ee7c22;
+  background-color: #22577A;
+}
+
+.gradientBackgound{
+  background-image: url('../source/img/VectorBack.png');
+  
 }
