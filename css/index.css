@@ -601,6 +601,9 @@ INDEX/HOME CSS
   padding-bottom: 5rem;
 }
 
+.centerHome{
+  align-self: center;
+}
 .HomeWhite h1{
   color: #57CC98;
   font-size: calc(3.75em + 0.25vmin);
@@ -608,6 +611,10 @@ INDEX/HOME CSS
   font-family: Montserrat-Black;
   word-wrap: break-word;
   
+}
+
+.downText{
+  padding-top: 7rem !important;
 }
 
 .HomeWhite p{
