@@ -300,6 +300,9 @@ nav{
   height: 300px;
 }
 
+.img-vector{
+  width: 400px;
+}
 
 /* responsive part */
 /* small mobile :320px. */
@@ -311,6 +314,9 @@ nav{
   .sectionGreenDif{
     background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
     height: auto !important;
+  }
+  .img-vector{
+    width: 300px;
   }
   .titleAB{
     font-size: 60px !important;
