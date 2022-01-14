@@ -438,11 +438,7 @@ nav{
   .sectionWhiteApply{
     height: auto !important;
   }
-  .rocket {
-    position: absolute;
-    bottom: 0;
-    
-  }
+  
 }
   @media (min-width: 48em) {
     .title{
@@ -494,11 +490,7 @@ nav{
       margin-left: -121px;
       width: 500px !important;
     }
-    .rocket {
-      position: absolute;
-      bottom:0;
-      max-width:200%
-    }
+    
     .sectionGreenDif{
       background: linear-gradient(90deg, #80ED99 20%, #22577A 100%);
       height: auto !important;
@@ -975,5 +967,5 @@ ul.social > li > a:hover {
 
 .gradientBackgound{
   background-image: url('../source/img/VectorBack.png');
-  
+
 }
