@@ -38,6 +38,9 @@ $("#phone").inputmask({"mask": "(999) 999-9999"});
 
 
 $("#applybtn").click(function () {
+  //Loader
+  let loader = document.getElementById("loader");
+
 	//nombres
 	let firstname = document.getElementById("firstName").value;
 	let lastname = document.getElementById("lastName").value;
@@ -57,8 +60,10 @@ $("#applybtn").click(function () {
   //Job Experience
   let file = document.getElementById("ifile").files[0];
 
+
 if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" && phone != "" && file != null) {
-  var reader = new FileReader();
+  loader.classList.replace("d-none", "d-block");
+  var reader = new FileReader(); 
   reader.readAsBinaryString(file);
   reader.onload = function () {
     var dataUri = btoa(reader.result);
@@ -79,6 +84,7 @@ if (firstname != "" && lastname != "" && level != "" && job != "" && mail != "" 
                 icon: 'success',
                 title: 'Great, your email has been send'
             })
+            loader.classList.replace("d-block", "d-none")
           });
 
 		}
