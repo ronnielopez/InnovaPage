@@ -959,9 +959,9 @@ ul.social > li {
 
 ul.social > li > a {
   display: inline-block;
-  line-height: 30px;
-  width: 30px;
-  height: 30px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 36px;
   background-color: #80EE9A;
   color: #fff;
