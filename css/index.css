@@ -944,6 +944,8 @@ particle {
 }
 
 
+
+
 ul.social {
   margin: 0;
   padding: 0;
@@ -964,6 +966,7 @@ ul.social > li > a {
   background-color: #80EE9A;
   color: #fff;
   margin: 0 3px 3px 0;
+  font-size: calc(1em + 1vmin);
 }
 
 ul.social > li > a:hover {
