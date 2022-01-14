@@ -206,7 +206,7 @@ width: 700px;
 
 .sectionWhite{
   height: 50vh;
-  background-color: #fff;
+  background-color: #F9FAFD;
 }
 
 .sectionTransparent{
@@ -224,7 +224,7 @@ width: 700px;
 }
 
 .spanAbout{
-  font-size: calc(1em + 1vmin);
+  font-size: calc(0.75em + 1vmin);
   max-width:100%;
   font-family: Montserrat-Medium;
   font-weight: 500;
@@ -284,7 +284,7 @@ padding-left: 15px;
 
 .sectionWhiteApply{
   height: auto;
-  background-color: #fff;
+  background-color: #F9FAFD;
 }
 
 .greenNav{
@@ -351,12 +351,12 @@ nav{
     margin-bottom: 4.5em;
   }
   .sectionWhiteAb{
-    background-color: #fff;
+    background-color: #F9FAFD;
     height: auto !important;
   }
   .sectionWhiteApply{
     height: auto !important;
-    background-color: #fff;
+    background-color: #F9FAFD;
   }
   .py-min-2{
     margin-top: 4rem;
@@ -365,7 +365,7 @@ nav{
     height: 95px;
   }
   .sectionWhiteContact{
-    background-color: #fff;
+    background-color: #F9FAFD;
     height: auto !important;
   }
   .contactCircleBelow{
@@ -403,12 +403,12 @@ nav{
     font-size: 60px !important;
   }
   .sectionWhiteAb{
-    background-color: #fff;
+    background-color: #F9FAFD;
     height: 50vh !important;
   }
   .sectionWhiteApply{
     height: auto !important;
-    background-color: #fff;
+    background-color: #F9FAFD;
   }
   .py-min-2{
     margin-top: 4rem;
@@ -417,7 +417,7 @@ nav{
     height: 95px;
   }
   .sectionWhiteContact{
-    background-color: #fff;
+    background-color: #F9FAFD;
     height: 75vh !important;
   }
   .contactCircleBelow{
@@ -464,7 +464,7 @@ nav{
       height: auto !important;
     }
     .sectionWhiteAb{
-      background-color: #fff;
+      background-color: #F9FAFD;
       height: 120vh !important;
     }
     .aboutCircleBelow{
@@ -472,7 +472,7 @@ nav{
       position: absolute;
     }
     .sectionWhiteContact{
-      background-color: #fff;
+      background-color: #F9FAFD;
       height: 120vh !important;
     }
     .contactCircleBelow{
