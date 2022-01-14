@@ -967,5 +967,8 @@ ul.social > li > a:hover {
 
 .gradientBackgound{
   background-image: url('../source/img/VectorBack.png');
+}
 
+.homeHeader{
+  height: 130vh;
 }
