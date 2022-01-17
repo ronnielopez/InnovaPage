@@ -29,7 +29,7 @@ $("#menu").click(()=>{
 	MASK
 --------------------*/
 $(":input").inputmask();
-$("#phone").inputmask({"mask": "(999) 999-9999"});
+$("#phone").inputmask({"mask": "(999) 9999-9999"});
 
 /*------------------
 	Formulario
