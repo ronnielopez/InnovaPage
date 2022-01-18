@@ -1007,3 +1007,6 @@ ul.social > li > a:hover {
     transform: rotate(360deg);
   }
 }
+.fontP{
+  font-family: Montserrat-Black;
+}
